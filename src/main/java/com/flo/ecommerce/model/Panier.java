@@ -12,6 +12,10 @@ public class Panier {
     @Id
     @GeneratedValue
     private Long id;
+
+    private Integer nbArticle;
+
+    private Double prixTotal;
     @OneToOne
     private Client client;
 }
